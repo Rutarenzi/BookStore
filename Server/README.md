@@ -14,6 +14,13 @@ This is the backend for book store
   =>cancel order
 
 ```
+# Technologies
+# features 
+  ```
+  =>Typescript
+  =>Express
+  =>Postgresql
+```
 
 ## Setup 
 
