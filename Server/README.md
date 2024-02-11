@@ -37,7 +37,7 @@ $ yarn run down
 
 #### Please:
 
-create Cloudinary account to be able to store image [here]("https://cloudinary.com/users/register_free")
+create Cloudinary account to be able to store image [here](https://cloudinary.com/users/register_free)
 
 ### Documantation end point
 
