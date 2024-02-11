@@ -11,6 +11,9 @@ class BookRepository{
    static async getAllbook(){
     return await Book.findAll()
    }
+   static async findBook(id:number){
+    return Book.findOne({where: {id}})
+   }
 }
 
 export default BookRepository

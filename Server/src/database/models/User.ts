@@ -2,16 +2,17 @@ import { DataTypes, Model,Optional } from 'sequelize';
 import { sequelize } from '.';
 import Account from './account';
 import Order from './order';
-interface UserProps {
+export interface UserProps {
     id: number;
     email: string;
     password: string;
 }
 
-interface UserCreactionProps 
-extends Optional<UserProps,'id'>{}
+export interface UserCreactionProps 
+extends Optional<UserProps,'id'>{
+}
 
-interface UserInstance extends 
+export interface UserInstance extends 
 Model<UserProps,UserCreactionProps>,UserProps{
  createdAt?:Date;
  updatedAt?: Date;

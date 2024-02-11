@@ -3,7 +3,7 @@ import { sequelize } from '.';
 import Order from './order';
 
 
-interface BookProps{
+export interface BookProps{
     id: number;
     title: string;
     writer: string;
@@ -49,7 +49,7 @@ const Book = sequelize.define<BookInstance>(
        },
        tags: {
         allowNull: false,
-         type: DataTypes.STRING
+         type: DataTypes.ARRAY(DataTypes.STRING)
        }, 
        
     }

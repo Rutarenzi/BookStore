@@ -25,7 +25,7 @@ const Book = {
             in:"formData",
             name: "image",
             type: "file",
-            description:"Image"
+            description:"image"
           },
           {
             in:"formData",
@@ -40,11 +40,14 @@ const Book = {
             description:"price"  
         },
         {
-            in:"formData",
-            name: "tags",
-            type: "string",
-            description:"tag"  
+        in: "formData",
+        name: "tags",
+        type: "array", 
+        items: {
+          type: "string",
         },
+        description: "tags",
+      },
         ],
         responses,
       },

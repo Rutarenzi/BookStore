@@ -2,14 +2,14 @@ import { DataTypes, Model,Optional } from 'sequelize';
 import {sequelize} from ".";
 
 
-interface  OrderProps {
+ export interface  OrderProps {
     id: number,
     user_id: number,
     book_id: number,
     status: string
 }
 
-interface OrderCreationProps
+export interface OrderCreationProps
 extends Optional<OrderProps,'id'>{}
 
 interface OrderInstance 

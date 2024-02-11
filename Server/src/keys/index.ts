@@ -12,6 +12,7 @@ const Keys ={
  DATABASE_USER : process.env.DATABASE_USER,
  DATABASE_PORT :process.env.DATABASE_PORT,
  DATABASE_PASSWORD : process.env.DATABASE_PASSWORD,
+ JWT_SECRET : process.env.JWT_SECRET || 'helloworld',
 
 //  CLOUDINARY KEYS
 CLOUD_NAME : process.env.CLOUD_NAME,

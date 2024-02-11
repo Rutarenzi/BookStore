@@ -1,5 +1,6 @@
 export const imageMimeTypes =[
     "image/jpeg",
     "image/png",
-    "image/webp"
+    "image/webp",
+    "image/jpg"
 ]
