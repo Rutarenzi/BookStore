@@ -1,7 +1,10 @@
 import defaultPath from "../documentation/default.path"
-
+import Book from "./Book/book";
+import Tag from "./Tag/tag";
 const paths ={
-    ...defaultPath
+    ...defaultPath,
+    ...Book,
+    ...Tag,
 }
 
 
@@ -26,8 +29,8 @@ const config ={
             name: "Book Store APIs Documentation"
         }
     ],
-    consumes: ['application/json'],
-    produces: ['application/json'],
+    // consumes: ['multipart/form-data'],
+    // produces: ['multipart/form-data'],
     paths
 }
 
