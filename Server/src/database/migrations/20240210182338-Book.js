@@ -29,7 +29,7 @@ module.exports = {
       },
       tags: {
        allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.ARRAY(Sequelize.STRING)
       }, 
       createdAt: {
         allowNull: false,

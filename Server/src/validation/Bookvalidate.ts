@@ -7,7 +7,7 @@ const BookSchema:Joi.ObjectSchema<BookCreation>=Joi.object({
     writer: Joi.string().required(),
     image: Joi.object().required(),
     price: Joi.number().required(),
-    tags: Joi.string().required()
+    tags: Joi.array().items(Joi.string()).required(),
 })
 interface dataProps{
     title: string;
@@ -17,15 +17,16 @@ interface dataProps{
     tags: string[]
 }
 const BookValidate=(req:Request,res:Response, next:NextFunction)=>{
-    const {title,writer,image, price, tags } = req.body
-
+    const {title,writer, price, tags } = req.body
+    
     const data: dataProps ={
         title,
         writer,
         image:req.file,
         price,
-        tags,
+        tags:[tags],
     }
+    console.log(data)
     const {error}:{error:any} = BookSchema.validate(data,{abortEarly: false} )
     if(error){
         return res.status(400).json({

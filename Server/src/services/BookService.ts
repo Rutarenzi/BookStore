@@ -7,11 +7,11 @@ class BookService {
     const {title,writer,price,tags } = data.body;
     const imageObj:any = data.file;
     const imageUrl: string = imageObj.path
-    const book :BookCreation={
+    const book:BookCreation={
       title,
        writer,
        price,
-       tags,
+       tags:[tags],
        image: imageUrl
     };
    return await BookRepository.createbook(book)
