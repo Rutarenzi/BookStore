@@ -14,6 +14,7 @@ class BookService {
        tags:[tags],
        image: imageUrl
     };
+    console.log(book)
    return await BookRepository.createbook(book)
     // if (tags !== "bite") {
     //   throw new HttpException(409,"tags does not exists")

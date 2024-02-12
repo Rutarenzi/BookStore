@@ -4,10 +4,12 @@ import upload from "../config/multer";
 
 
 const ImageCheck=(name: string)=> {
+
     return async(req:Request,res:Response, next:NextFunction)=>{
         try{
           upload.single(name)(req,res,(err:any)=>{
             if(err){
+                console.log(err)
                 return res.status(400).json({
                     status: 400,
                     error: 'Unsupported Format'

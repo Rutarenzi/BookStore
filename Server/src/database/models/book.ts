@@ -3,7 +3,7 @@ import { sequelize } from '.';
 import Order from './order';
 
 
-interface BookProps{
+export interface BookProps{
     id: number;
     title: string;
     writer: string;

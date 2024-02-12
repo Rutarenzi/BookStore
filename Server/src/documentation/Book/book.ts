@@ -25,7 +25,7 @@ const Book = {
             in:"formData",
             name: "image",
             type: "file",
-            description:"Image"
+            description:"image"
           },
           {
             in:"formData",

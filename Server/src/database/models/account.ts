@@ -7,7 +7,7 @@ interface AccountProps {
     balance: number
 }
 
-interface AccountCreationProps
+export interface AccountCreationProps
 extends Optional<AccountProps,'id'>{}
 
 interface AccountInstance

@@ -1,9 +1,13 @@
 import defaultPath from "../documentation/default.path"
 import Book from "./Book/book";
+import Order from "./Order/order";
 import Tag from "./Tag/tag";
+import User from "./User/user"
 const paths ={
     ...defaultPath,
+    ...User,
     ...Book,
+    ...Order,
     ...Tag,
 }
 
